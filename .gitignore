@@ -2,6 +2,7 @@
 
 # project
 .idea
+react-app-env-d.ts
 
 # dependencies
 /node_modules

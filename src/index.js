@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import logo from "./logo.svg";
+import logo from './logo.svg';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,4 +26,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+// eslint-disable-next-line no-console
 reportWebVitals(console.log);

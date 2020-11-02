@@ -1,0 +1,64 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "no-console": "error",
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "next",
+        "varsIgnorePattern": "RouteComponentProps"
+      }
+    ],
+    "no-trailing-spaces": "warn",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": [
+          "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"
+        ]
+      }
+    ],
+    "camelcase": "error",
+    "eqeqeq": "warn",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": [
+          "PascalCase"
+        ],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "error",
+    "@typescript-eslint/no-unused-vars": "off"
+  }
+}
